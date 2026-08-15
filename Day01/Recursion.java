@@ -37,7 +37,7 @@ public class Recursion{
 }
 */
 
-
+/*
 //recursion (print after recursion statement)
 import java.util.*;
 public class Recursion{
@@ -51,5 +51,22 @@ public class Recursion{
         }
         print(i,n-1);
         System.err.println(n);
+    }
+}
+*/
+
+//sum of n numbers using recursion
+import java.util.*;
+public class Recursion{
+    public static void main(String args[]){
+        
+        int ans=print(5,0);
+        System.out.println(ans);
+    }
+    static int print(int i,int sum){
+        if(i<1){
+            return sum;
+        }
+        return print(i-1,sum+i);
     }
 }
